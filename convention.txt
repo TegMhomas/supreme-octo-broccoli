@@ -1,0 +1,29 @@
+
+item
+    convention
+    example
+
+
+namespaces
+    short names
+    fb
+
+types
+    pascal case
+    FooBar
+
+functions
+    pascal case
+    FooBar
+
+local variables
+    snake case
+    foo_bar
+
+member variables
+    m_ prefix
+    m_foo_bar
+
+argument variables
+    _ prefix
+    _foo_bar
