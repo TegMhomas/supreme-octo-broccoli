@@ -1,20 +1,21 @@
 #include <SFML/Graphics.hpp>
 
+#include "stack_machine.hpp"
+#include "window.hpp"
+#include "states/state_boot.hpp"
+
 int main() {
-  sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-  sf::CircleShape shape(100.f);
-  shape.setFillColor(sf::Color::Green);
 
-  while (window.isOpen()) {
-    sf::Event event;
-    while (window.pollEvent(event)) {
-      if (event.type == sf::Event::Closed)
-        window.close();
-    }
+  StackMachine machine;
+  Window window;
 
-    window.clear();
-    window.draw(shape);
-    window.display();
+  machine.m_game_stack.push(std::make_unique<StateBoot>());
+
+  while (!machine.m_game_stack.empty()) {
+    machine.m_game_stack.top()->GetEvents(window.GiveEvents());
+    machine.m_game_stack.top()->Compute(machine);
+    window.GetRenderStuffs(machine.m_game_stack.top()->GiveRenderStuffs());
+    window.Render();
   }
 
   return 0;
