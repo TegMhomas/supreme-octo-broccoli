@@ -1,7 +1,7 @@
-# supreme-octo-broccoli
+# Supreme Octo Broccoli!
 Group game project thing.
 
-# Dependencies:
+# Dependencies
 - cmake - build system
 - SFML 2.5 - graphics, system, etc
 - spdlog - logging
@@ -9,9 +9,10 @@ Group game project thing.
 
 All available on vcpkg.
 
-# External resources:
+# External resources
 - Source Code Pro - font
 
+# Plan
 ```
 core {
 	~~~~~~~~~~
