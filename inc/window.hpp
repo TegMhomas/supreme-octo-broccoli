@@ -6,7 +6,7 @@
 class Window {
 private:
   sf::RenderWindow m_window;
-
+ 
 public:
   Window();
   ~Window();
@@ -21,6 +21,7 @@ public:
   void GetRenderStuffs(RenderStuffs& _render_stuffs);
 
   void Render();
+  
 
   std::vector<sf::Event> GiveEvents();
 
