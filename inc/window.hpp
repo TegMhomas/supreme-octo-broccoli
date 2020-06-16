@@ -6,7 +6,8 @@
 class Window {
 private:
   sf::RenderWindow m_window;
- 
+  sf::Font m_font;
+
 public:
   Window();
   ~Window();
@@ -18,10 +19,7 @@ public:
   Window& operator=(Window&& other) noexcept = delete;
 
 public:
-  void GetRenderStuffs(RenderStuffs& _render_stuffs);
-
-  void Render();
-  
+  void Render(const RenderStuffs& _render_stuffs);
 
   std::vector<sf::Event> GiveEvents();
 

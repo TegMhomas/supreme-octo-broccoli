@@ -1,16 +1,18 @@
-
 #pragma once
 
 #include "../game_state.hpp"
 
 class StateBoot : public BaseGameState {
+private:
+  bool done = false;
+
 public:
-  virtual void GetEvents(std::vector<sf::Event> _events) {}
+  StateBoot();
+  ~StateBoot();
 
-  virtual void Compute(StackMachine& _stack_machine) {}
+  virtual void GetEvents(const std::vector<sf::Event>& _events);
 
-  virtual RenderStuffs GiveRenderStuffs() {
-    RenderStuffs render_stuffs;
-    return render_stuffs;
-  }
+  virtual void Compute(StackMachine& _stack_machine);
+
+  virtual RenderStuffs GiveRenderStuffs();
 };

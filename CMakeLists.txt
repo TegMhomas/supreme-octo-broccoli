@@ -12,8 +12,15 @@ add_executable(sob ${sources} ${headers})
 target_include_directories(sob PRIVATE ${CMAKE_SOURCE_DIR}/inc)
 
 
+
 find_package(SFML COMPONENTS system window graphics CONFIG REQUIRED)
 target_link_libraries(sob PRIVATE sfml-system sfml-window sfml-graphics OpenGL)
+
+find_package(spdlog CONFIG REQUIRED)
+target_link_libraries(sob PRIVATE spdlog::spdlog spdlog::spdlog_header_only)
+
+find_package(cereal CONFIG REQUIRED)
+target_link_libraries(sob PRIVATE cereal)
 
 
 
