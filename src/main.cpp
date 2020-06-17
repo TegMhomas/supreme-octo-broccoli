@@ -1,6 +1,7 @@
 
 #include "stack_machine.hpp"
 #include "states/state_boot.hpp"
+#include "states/state_game.hpp"
 #include "utils.hpp"
 #include "window.hpp"
 #include <SFML/Graphics.hpp>
@@ -16,6 +17,7 @@ int main() {
 
   SPDLOG_INFO("pushing to stack");
 
+  machine.m_game_stack.push(std::make_unique<StateGame>());
   machine.m_game_stack.push(std::make_unique<StateBoot>());
 
   SPDLOG_INFO("starting the game loop");
