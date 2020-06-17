@@ -8,11 +8,18 @@ RenderStuffs StateGame::GiveRenderStuffs() {
 
   {
     LayerAndTexture lat{ 1, "" };
+    Quad quad;
 
-    Quad quad({ 100.f, 100.f }, { 140.f, 140.f });
-    quad.SetColor(sf::Color::Yellow);
+    const auto& tiles = m_current_room.GetAllTiles();
 
-    render_stuffs.quads[lat].push_back(quad);
+    for (const auto& tile : tiles) {
+      quad = Quad({ static_cast<sf::Vector2f>(tile.m_position_in_room) },
+                  { 100.f, 100.f });
+
+      quad.SetColor(sf::Color::Red);
+
+      render_stuffs.quads[lat].push_back(quad);
+    }
   }
 
   {

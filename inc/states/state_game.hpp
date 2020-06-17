@@ -1,10 +1,12 @@
 #pragma once
 
+#include "../game/room.hpp"
 #include "../game_state.hpp"
 
 class StateGame : public BaseGameState {
 private:
   bool done = false;
+  Room m_current_room;
 
 public:
   StateGame();
