@@ -44,7 +44,7 @@ RenderStuffs StateBoot::GiveRenderStuffs() {
   {
     Text text;
     text.pos = sf::Vector2f(10.0f, 10.0f);
-    text.str = "siema";
+    text.str = "Press Escape To START!";
     render_stuffs.texts.push_back(text);
   }
 
