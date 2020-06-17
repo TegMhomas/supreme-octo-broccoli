@@ -4,7 +4,7 @@
 #include "utils.hpp"
 
 StateBoot::StateBoot() {
-  ;
+  SPDLOG_INFO("state boot constructing");
 }
 
 StateBoot::~StateBoot() {
@@ -15,6 +15,10 @@ void StateBoot::GetEvents(const std::vector<sf::Event>& _events) {
   for (const auto& event : _events) {
     if (event.type == sf::Event::Closed) {
       done = true;
+    } else if (event.type == sf::Event::KeyPressed) {
+      if (event.key.code == sf::Keyboard::Escape) {
+        done = true;
+      }
     }
   }
 }
