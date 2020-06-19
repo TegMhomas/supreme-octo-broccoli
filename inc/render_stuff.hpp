@@ -14,6 +14,11 @@ struct Quad {
     arr[1].position = { _xy.x + _wh.x, _xy.y };
     arr[2].position = _xy + _wh;
     arr[3].position = { _xy.x, _xy.y + _wh.y };
+
+    arr[0].texCoords = { 0.f, 0.f };
+    arr[1].texCoords = { 64.f, 0.f };
+    arr[2].texCoords = { 64.f, 64.f };
+    arr[3].texCoords = { 0.f, 64.f };
   }
 
   void SetColor(const sf::Color& _color) {
@@ -28,6 +33,7 @@ struct LayerAndTexture {
 };
 
 bool operator<(const LayerAndTexture& left, const LayerAndTexture& right);
+bool operator==(const LayerAndTexture& left, const LayerAndTexture& right);
 
 struct Text {
   sf::Vector2f pos;

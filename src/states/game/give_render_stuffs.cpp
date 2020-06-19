@@ -12,15 +12,22 @@ RenderStuffs StateGame::GiveRenderStuffs() {
 
     const auto& tiles = m_current_room.GetAllTiles();
 
+    SPDLOG_DEBUG("aaa");
     for (const auto& tile : tiles) {
       quad = Quad({ static_cast<sf::Vector2f>(tile.m_position_in_room) },
                   { 100.f, 100.f });
 
       lat.texture = tile.m_texture_name;
+      SPDLOG_DEBUG(lat.texture);
 
-      quad.SetColor(sf::Color::Red);
-
-      render_stuffs.quads[lat].push_back(quad);
+      if (render_stuffs.quads.contains(lat)) {
+        render_stuffs.quads[lat].push_back(quad);
+        SPDLOG_DEBUG("contains");
+      } else {
+        render_stuffs.quads[lat] = std::vector<Quad>();
+        render_stuffs.quads[lat].push_back(quad);
+        SPDLOG_DEBUG("not contains");
+      }
     }
   }
 
