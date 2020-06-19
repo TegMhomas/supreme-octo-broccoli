@@ -13,7 +13,10 @@ void Window::Render(const RenderStuffs& _render_stuffs) {
       if (texture == "") {
         m_window.draw(quads.data()->arr.data(), quads.size() * 4, sf::Quads);
       } else {
-        // draw with texture...
+        m_window.draw(quads.data()->arr.data(),
+                      quads.size() * 4,
+                      sf::Quads,
+                      &m_textures[texture]);
       }
     }
   }
