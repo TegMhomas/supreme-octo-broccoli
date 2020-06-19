@@ -11,10 +11,12 @@ public:
   std::string m_texture_name;
 
   bool m_walkable = true;
+  int m_layer = 1;
 
   template<class Archive>
   void serialize(Archive& archive) {
-    archive(cereal::make_nvp("m_position_in_room.x", m_position_in_room.x),
+    archive(cereal::make_nvp("m_layer", m_layer),
+            cereal::make_nvp("m_position_in_room.x", m_position_in_room.x),
             cereal::make_nvp("m_position_in_room.y", m_position_in_room.y),
             cereal::make_nvp("m_texture_position.x", m_texture_position.x),
             cereal::make_nvp("m_texture_position.y", m_texture_position.y),

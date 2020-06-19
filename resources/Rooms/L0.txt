@@ -2,7 +2,7 @@
 <cereal>
 	<m_tiles size="dynamic">
 		<value0>
-			<m_position_in_room.x>0</m_position_in_room.x>
+			<m_layer>1</m_layer><m_position_in_room.x>0</m_position_in_room.x>
 			<m_position_in_room.y>0</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
@@ -10,7 +10,7 @@
 			<m_walkable>true</m_walkable>
 		</value0>
 		<value0>
-			<m_position_in_room.x>0</m_position_in_room.x>
+			<m_layer>2</m_layer><m_position_in_room.x>0</m_position_in_room.x>
 			<m_position_in_room.y>0</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
@@ -18,15 +18,15 @@
 			<m_walkable>true</m_walkable>
 		</value0>
 		<value1>
-			<m_position_in_room.x>0</m_position_in_room.x>
-			<m_position_in_room.y>100</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>mud_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value1>
 		<value2>
-			<m_position_in_room.x>100</m_position_in_room.x>
+			<m_layer>1</m_layer><m_position_in_room.x>1</m_position_in_room.x>
 			<m_position_in_room.y>0</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
@@ -34,71 +34,71 @@
 			<m_walkable>true</m_walkable>
 		</value2>
 		<value3>
-			<m_position_in_room.x>100</m_position_in_room.x>
-			<m_position_in_room.y>100</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>1</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>mud_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>200</m_position_in_room.x>
-			<m_position_in_room.y>100</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>2</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>mud_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value1>
-			<m_position_in_room.x>300</m_position_in_room.x>
-			<m_position_in_room.y>100</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>3</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value1>
 		<value2>
-			<m_position_in_room.x>400</m_position_in_room.x>
-			<m_position_in_room.y>100</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>4</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value2>
 		<value3>
-			<m_position_in_room.x>500</m_position_in_room.x>
-			<m_position_in_room.y>100</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>5</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>600</m_position_in_room.x>
-			<m_position_in_room.y>100</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>6</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>700</m_position_in_room.x>
-			<m_position_in_room.y>100</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>7</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>800</m_position_in_room.x>
-			<m_position_in_room.y>100</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>8</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
-		<value0>
-			<m_position_in_room.x>200</m_position_in_room.x>
+		<value0><m_layer>1</m_layer>
+			<m_layer>1</m_layer><m_position_in_room.x>2</m_position_in_room.x>
 			<m_position_in_room.y>0</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
@@ -106,7 +106,7 @@
 			<m_walkable>true</m_walkable>
 		</value0>
 		<value1>
-			<m_position_in_room.x>300</m_position_in_room.x>
+			<m_layer>1</m_layer><m_position_in_room.x>3</m_position_in_room.x>
 			<m_position_in_room.y>0</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
@@ -114,7 +114,7 @@
 			<m_walkable>true</m_walkable>
 		</value1>
 		<value2>
-			<m_position_in_room.x>400</m_position_in_room.x>
+			<m_layer>1</m_layer><m_position_in_room.x>4</m_position_in_room.x>
 			<m_position_in_room.y>0</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
@@ -122,7 +122,7 @@
 			<m_walkable>true</m_walkable>
 		</value2>
 		<value3>
-			<m_position_in_room.x>500</m_position_in_room.x>
+			<m_layer>1</m_layer><m_position_in_room.x>5</m_position_in_room.x>
 			<m_position_in_room.y>0</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
@@ -130,7 +130,7 @@
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>600</m_position_in_room.x>
+			<m_layer>1</m_layer><m_position_in_room.x>6</m_position_in_room.x>
 			<m_position_in_room.y>0</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
@@ -138,7 +138,7 @@
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>700</m_position_in_room.x>
+			<m_layer>1</m_layer><m_position_in_room.x>7</m_position_in_room.x>
 			<m_position_in_room.y>0</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
@@ -146,7 +146,7 @@
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>800</m_position_in_room.x>
+			<m_layer>1</m_layer><m_position_in_room.x>8</m_position_in_room.x>
 			<m_position_in_room.y>0</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
@@ -154,288 +154,288 @@
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>100</m_position_in_room.x>
-			<m_position_in_room.y>200</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>1</m_position_in_room.x>
+			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
-		<value0>
-			<m_position_in_room.x>200</m_position_in_room.x>
-			<m_position_in_room.y>200</m_position_in_room.y>
+		<value0><m_layer>1</m_layer>
+			<m_layer>1</m_layer><m_position_in_room.x>2</m_position_in_room.x>
+			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value0>
 		<value1>
-			<m_position_in_room.x>300</m_position_in_room.x>
-			<m_position_in_room.y>200</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>3</m_position_in_room.x>
+			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>mud_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value1>
 		<value2>
-			<m_position_in_room.x>400</m_position_in_room.x>
-			<m_position_in_room.y>200</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>4</m_position_in_room.x>
+			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value2>
 		<value3>
-			<m_position_in_room.x>500</m_position_in_room.x>
-			<m_position_in_room.y>200</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>5</m_position_in_room.x>
+			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>600</m_position_in_room.x>
-			<m_position_in_room.y>200</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>6</m_position_in_room.x>
+			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>700</m_position_in_room.x>
-			<m_position_in_room.y>200</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>7</m_position_in_room.x>
+			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>800</m_position_in_room.x>
-			<m_position_in_room.y>200</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>8</m_position_in_room.x>
+			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 <value3>
-			<m_position_in_room.x>100</m_position_in_room.x>
-			<m_position_in_room.y>300</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>1</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
-		<value0>
-			<m_position_in_room.x>200</m_position_in_room.x>
-			<m_position_in_room.y>300</m_position_in_room.y>
+		<value0><m_layer>1</m_layer>
+			<m_layer>1</m_layer><m_position_in_room.x>2</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value0>
 		<value1>
-			<m_position_in_room.x>300</m_position_in_room.x>
-			<m_position_in_room.y>300</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>3</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value1>
 		<value2>
-			<m_position_in_room.x>400</m_position_in_room.x>
-			<m_position_in_room.y>300</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>4</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value2>
 		<value3>
-			<m_position_in_room.x>500</m_position_in_room.x>
-			<m_position_in_room.y>300</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>5</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>600</m_position_in_room.x>
-			<m_position_in_room.y>300</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>6</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>700</m_position_in_room.x>
-			<m_position_in_room.y>300</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>7</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>800</m_position_in_room.x>
-			<m_position_in_room.y>300</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>8</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>0</m_position_in_room.x>
-			<m_position_in_room.y>200</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>0</m_position_in_room.x>
-			<m_position_in_room.y>300</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>0</m_position_in_room.x>
-			<m_position_in_room.y>400</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 <value3>
-			<m_position_in_room.x>100</m_position_in_room.x>
-			<m_position_in_room.y>400</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>1</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
-		<value0>
-			<m_position_in_room.x>200</m_position_in_room.x>
-			<m_position_in_room.y>400</m_position_in_room.y>
+		<value0><m_layer>1</m_layer>
+			<m_layer>1</m_layer><m_position_in_room.x>2</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value0>
 		<value1>
-			<m_position_in_room.x>300</m_position_in_room.x>
-			<m_position_in_room.y>400</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>3</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value1>
 		<value2>
-			<m_position_in_room.x>400</m_position_in_room.x>
-			<m_position_in_room.y>400</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>4</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value2>
 		<value3>
-			<m_position_in_room.x>500</m_position_in_room.x>
-			<m_position_in_room.y>400</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>5</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>600</m_position_in_room.x>
-			<m_position_in_room.y>400</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>6</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>700</m_position_in_room.x>
-			<m_position_in_room.y>400</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>7</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>800</m_position_in_room.x>
-			<m_position_in_room.y>400</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>8</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>0</m_position_in_room.x>
-			<m_position_in_room.y>500</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 <value3>
-			<m_position_in_room.x>100</m_position_in_room.x>
-			<m_position_in_room.y>500</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>1</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
-		<value0>
-			<m_position_in_room.x>200</m_position_in_room.x>
-			<m_position_in_room.y>500</m_position_in_room.y>
+		<value0><m_layer>1</m_layer>
+			<m_layer>1</m_layer><m_position_in_room.x>2</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value0>
 		<value1>
-			<m_position_in_room.x>300</m_position_in_room.x>
-			<m_position_in_room.y>500</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>3</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value1>
 		<value2>
-			<m_position_in_room.x>400</m_position_in_room.x>
-			<m_position_in_room.y>500</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>4</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value2>
 		<value3>
-			<m_position_in_room.x>500</m_position_in_room.x>
-			<m_position_in_room.y>500</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>5</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>600</m_position_in_room.x>
-			<m_position_in_room.y>500</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>6</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>700</m_position_in_room.x>
-			<m_position_in_room.y>500</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>7</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value3>
 		<value3>
-			<m_position_in_room.x>800</m_position_in_room.x>
-			<m_position_in_room.y>500</m_position_in_room.y>
+			<m_layer>1</m_layer><m_position_in_room.x>8</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>

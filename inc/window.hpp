@@ -11,6 +11,9 @@ private:
   sf::Font m_font;
   std::map<std::string, sf::Texture> m_textures;
 
+  sf::Clock m_fps_clock;
+  float m_fps_last = 0.f;
+
 public:
   Window();
   ~Window();
