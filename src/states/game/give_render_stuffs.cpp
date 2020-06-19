@@ -16,6 +16,8 @@ RenderStuffs StateGame::GiveRenderStuffs() {
       quad = Quad({ static_cast<sf::Vector2f>(tile.m_position_in_room) },
                   { 100.f, 100.f });
 
+      lat.texture = tile.m_texture_name;
+
       quad.SetColor(sf::Color::Red);
 
       render_stuffs.quads[lat].push_back(quad);

@@ -5,6 +5,7 @@
 
 StateGame::StateGame() {
   SPDLOG_INFO("state game constructing");
+  m_current_room = Room("L0.txt");
 }
 
 StateGame::~StateGame() {

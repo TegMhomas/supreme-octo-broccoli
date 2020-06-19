@@ -2,11 +2,14 @@
 
 #include "render_stuff.hpp"
 #include <SFML/Graphics.hpp>
+#include <map>
+#include <string>
 
 class Window {
 private:
   sf::RenderWindow m_window;
   sf::Font m_font;
+  std::map<std::string, sf::Texture> m_textures;
 
 public:
   Window();

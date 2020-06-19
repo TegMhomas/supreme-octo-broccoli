@@ -1,6 +1,12 @@
 
 #include "game/room.hpp"
 #include "utils.hpp"
+#include <cereal/archives/binary.hpp>
+#include <cereal/archives/json.hpp>
+#include <cereal/archives/xml.hpp>
+#include <cereal/cereal.hpp>
+#include <cereal/types/vector.hpp>
+#include <fstream>
 
 Room::Room() {
 
@@ -17,7 +23,23 @@ Room::Room() {
   m_tiles.push_back(tile);
 }
 
-Room::Room(const std::string _config_name) {}
+Room::Room(const std::string _room_config_name) {
+  std::ifstream is;
+
+  is.open("resources/Rooms/" + _room_config_name);
+  if (!is.is_open()) {
+    is.open("../../../resources/Rooms/" + _room_config_name);
+    if (!is.is_open()) {
+      SPDLOG_ERROR("can't find: " + _room_config_name);
+      std::terminate();
+    }
+  }
+
+  std::unique_ptr<cereal::XMLInputArchive> archive =
+    std::make_unique<cereal::XMLInputArchive>(is);
+
+  (*archive)(cereal::make_nvp("m_tiles", m_tiles));
+}
 
 Room::~Room() {}
 

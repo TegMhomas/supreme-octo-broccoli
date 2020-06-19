@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cereal>
+	<m_tiles size="dynamic">
+		<value0>
+			<m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>0</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value0>
+		<value1>
+			<m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>100</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>mud_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value1>
+		<value2>
+			<m_position_in_room.x>100</m_position_in_room.x>
+			<m_position_in_room.y>0</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>water_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value2>
+		<value3>
+			<m_position_in_room.x>100</m_position_in_room.x>
+			<m_position_in_room.y>100</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name></m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value3>
+		<value3>
+			<m_position_in_room.x>200</m_position_in_room.x>
+			<m_position_in_room.y>100</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name></m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value3>
+	</m_tiles>
+</cereal>
+
