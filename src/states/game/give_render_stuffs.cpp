@@ -34,7 +34,7 @@ RenderStuffs StateGame::GiveRenderStuffs() {
   {
     Text text;
     text.pos = sf::Vector2f(10.0f, 10.0f);
-    text.str = "game";
+   // text.str = "game";
     render_stuffs.texts.push_back(text);
   }
 
