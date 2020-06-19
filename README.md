@@ -110,13 +110,77 @@ Do zrobienia:
 
 
 Przydział obowiązków:
+Gruner:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Gruszka:
 
 
 
-Bruno:
+
 
 
 Filip:
+
+
+
+
 
