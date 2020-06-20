@@ -14,17 +14,17 @@ StateBoot::~StateBoot() {
 void StateBoot::GetEvents(const std::vector<sf::Event>& _events) {
   for (const auto& event : _events) {
     if (event.type == sf::Event::Closed) {
-      done = true;
+      m_done = true;
     } else if (event.type == sf::Event::KeyPressed) {
       if (event.key.code == sf::Keyboard::Escape) {
-        done = true;
+        m_done = true;
       }
     }
   }
 }
 
 void StateBoot::Compute(StackMachine& _stack_machine) {
-  if (done == true) {
+  if (m_done == true) {
     _stack_machine.m_game_stack.pop();
   }
 }

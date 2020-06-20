@@ -2,11 +2,14 @@
 
 #include "../game/room.hpp"
 #include "../game_state.hpp"
+#include <vector>
+#include "../game/entity.hpp"
 
 class StateGame : public BaseGameState {
 private:
-  bool done = false;
+  bool m_done = false;
   Room m_current_room;
+  std::vector<Entity> m_entities;
 
 public:
   StateGame();
