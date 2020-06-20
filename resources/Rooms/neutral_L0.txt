@@ -2,103 +2,8 @@
 <cereal>
 	<m_tiles size="dynamic">
 		<value0>
-			<m_layer>1</m_layer><m_position_in_room.x>0</m_position_in_room.x>
-			<m_position_in_room.y>0</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>stone_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value0>
-		<value0>
-			<m_layer>2</m_layer><m_position_in_room.x>0</m_position_in_room.x>
-			<m_position_in_room.y>0</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>dark_blood_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value0>
-		<value1>
-			<m_layer>1</m_layer><m_position_in_room.x>0</m_position_in_room.x>
-			<m_position_in_room.y>1</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>mud_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value1>
-		<value2>
-			<m_layer>1</m_layer><m_position_in_room.x>1</m_position_in_room.x>
-			<m_position_in_room.y>0</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>water_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value2>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>1</m_position_in_room.x>
-			<m_position_in_room.y>1</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>mud_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>2</m_position_in_room.x>
-			<m_position_in_room.y>1</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>mud_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value1>
-			<m_layer>1</m_layer><m_position_in_room.x>3</m_position_in_room.x>
-			<m_position_in_room.y>1</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value1>
-		<value2>
-			<m_layer>1</m_layer><m_position_in_room.x>4</m_position_in_room.x>
-			<m_position_in_room.y>1</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value2>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>5</m_position_in_room.x>
-			<m_position_in_room.y>1</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>6</m_position_in_room.x>
-			<m_position_in_room.y>1</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>7</m_position_in_room.x>
-			<m_position_in_room.y>1</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>8</m_position_in_room.x>
-			<m_position_in_room.y>1</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value0><m_layer>1</m_layer>
-			<m_layer>1</m_layer><m_position_in_room.x>2</m_position_in_room.x>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>0</m_position_in_room.x>
 			<m_position_in_room.y>0</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
@@ -106,79 +11,17 @@
 			<m_walkable>true</m_walkable>
 		</value0>
 		<value1>
-			<m_layer>1</m_layer><m_position_in_room.x>3</m_position_in_room.x>
-			<m_position_in_room.y>0</m_position_in_room.y>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
 		</value1>
 		<value2>
-			<m_layer>1</m_layer><m_position_in_room.x>4</m_position_in_room.x>
-			<m_position_in_room.y>0</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value2>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>5</m_position_in_room.x>
-			<m_position_in_room.y>0</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>6</m_position_in_room.x>
-			<m_position_in_room.y>0</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>7</m_position_in_room.x>
-			<m_position_in_room.y>0</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>8</m_position_in_room.x>
-			<m_position_in_room.y>0</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>1</m_position_in_room.x>
-			<m_position_in_room.y>2</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value0><m_layer>1</m_layer>
-			<m_layer>1</m_layer><m_position_in_room.x>2</m_position_in_room.x>
-			<m_position_in_room.y>2</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value0>
-		<value1>
-			<m_layer>1</m_layer><m_position_in_room.x>3</m_position_in_room.x>
-			<m_position_in_room.y>2</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>mud_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value1>
-		<value2>
-			<m_layer>1</m_layer><m_position_in_room.x>4</m_position_in_room.x>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>0</m_position_in_room.x>
 			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
@@ -186,261 +29,410 @@
 			<m_walkable>true</m_walkable>
 		</value2>
 		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>5</m_position_in_room.x>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value3>
+		<value4>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value4>
+		<value5>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value5>
+		<value6>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>6</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value6>
+		<value7>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>0</m_position_in_room.x>
+			<m_position_in_room.y>7</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value7>
+		<value8>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>1</m_position_in_room.x>
+			<m_position_in_room.y>0</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value8>
+		<value9>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>1</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value9>
+		<value10>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>1</m_position_in_room.x>
 			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>6</m_position_in_room.x>
+		</value10>
+		<value11>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>1</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value11>
+		<value12>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>1</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value12>
+		<value13>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>1</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value13>
+		<value14>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>1</m_position_in_room.x>
+			<m_position_in_room.y>6</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value14>
+		<value15>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>1</m_position_in_room.x>
+			<m_position_in_room.y>7</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value15>
+		<value16>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>2</m_position_in_room.x>
+			<m_position_in_room.y>0</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value16>
+		<value17>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>2</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value17>
+		<value18>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>2</m_position_in_room.x>
 			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>7</m_position_in_room.x>
+		</value18>
+		<value19>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>2</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value19>
+		<value20>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>2</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value20>
+		<value21>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>2</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value21>
+		<value22>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>2</m_position_in_room.x>
+			<m_position_in_room.y>6</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value22>
+		<value23>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>2</m_position_in_room.x>
+			<m_position_in_room.y>7</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value23>
+		<value24>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>3</m_position_in_room.x>
+			<m_position_in_room.y>0</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value24>
+		<value25>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>3</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value25>
+		<value26>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>3</m_position_in_room.x>
 			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>8</m_position_in_room.x>
+		</value26>
+		<value27>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>3</m_position_in_room.x>
+			<m_position_in_room.y>3</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value27>
+		<value28>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>3</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value28>
+		<value29>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>3</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value29>
+		<value30>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>3</m_position_in_room.x>
+			<m_position_in_room.y>6</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value30>
+		<value31>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>3</m_position_in_room.x>
+			<m_position_in_room.y>7</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value31>
+		<value32>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>4</m_position_in_room.x>
+			<m_position_in_room.y>0</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value32>
+		<value33>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>4</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
+			<m_texture_position.x>0</m_texture_position.x>
+			<m_texture_position.y>0</m_texture_position.y>
+			<m_texture_name>grass_tile.png</m_texture_name>
+			<m_walkable>true</m_walkable>
+		</value33>
+		<value34>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>4</m_position_in_room.x>
 			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>1</m_position_in_room.x>
+		</value34>
+		<value35>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>4</m_position_in_room.x>
 			<m_position_in_room.y>3</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-		<value0><m_layer>1</m_layer>
-			<m_layer>1</m_layer><m_position_in_room.x>2</m_position_in_room.x>
-			<m_position_in_room.y>3</m_position_in_room.y>
+		</value35>
+		<value36>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>4</m_position_in_room.x>
+			<m_position_in_room.y>4</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value0>
-		<value1>
-			<m_layer>1</m_layer><m_position_in_room.x>3</m_position_in_room.x>
-			<m_position_in_room.y>3</m_position_in_room.y>
+		</value36>
+		<value37>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>4</m_position_in_room.x>
+			<m_position_in_room.y>5</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value1>
-		<value2>
-			<m_layer>1</m_layer><m_position_in_room.x>4</m_position_in_room.x>
-			<m_position_in_room.y>3</m_position_in_room.y>
+		</value37>
+		<value38>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>4</m_position_in_room.x>
+			<m_position_in_room.y>6</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value2>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>5</m_position_in_room.x>
-			<m_position_in_room.y>3</m_position_in_room.y>
+		</value38>
+		<value39>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>4</m_position_in_room.x>
+			<m_position_in_room.y>7</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>6</m_position_in_room.x>
-			<m_position_in_room.y>3</m_position_in_room.y>
+		</value39>
+		<value40>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>5</m_position_in_room.x>
+			<m_position_in_room.y>0</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>7</m_position_in_room.x>
-			<m_position_in_room.y>3</m_position_in_room.y>
+		</value40>
+		<value41>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>5</m_position_in_room.x>
+			<m_position_in_room.y>1</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>8</m_position_in_room.x>
-			<m_position_in_room.y>3</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>0</m_position_in_room.x>
+		</value41>
+		<value42>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>5</m_position_in_room.x>
 			<m_position_in_room.y>2</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>0</m_position_in_room.x>
+		</value42>
+		<value43>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>5</m_position_in_room.x>
 			<m_position_in_room.y>3</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>0</m_position_in_room.x>
+		</value43>
+		<value44>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>5</m_position_in_room.x>
 			<m_position_in_room.y>4</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>1</m_position_in_room.x>
-			<m_position_in_room.y>4</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value0><m_layer>1</m_layer>
-			<m_layer>1</m_layer><m_position_in_room.x>2</m_position_in_room.x>
-			<m_position_in_room.y>4</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value0>
-		<value1>
-			<m_layer>1</m_layer><m_position_in_room.x>3</m_position_in_room.x>
-			<m_position_in_room.y>4</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value1>
-		<value2>
-			<m_layer>1</m_layer><m_position_in_room.x>4</m_position_in_room.x>
-			<m_position_in_room.y>4</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value2>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>5</m_position_in_room.x>
-			<m_position_in_room.y>4</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>6</m_position_in_room.x>
-			<m_position_in_room.y>4</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>7</m_position_in_room.x>
-			<m_position_in_room.y>4</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>8</m_position_in_room.x>
-			<m_position_in_room.y>4</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>0</m_position_in_room.x>
+		</value44>
+		<value45>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>5</m_position_in_room.x>
 			<m_position_in_room.y>5</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>1</m_position_in_room.x>
-			<m_position_in_room.y>5</m_position_in_room.y>
+		</value45>
+		<value46>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>5</m_position_in_room.x>
+			<m_position_in_room.y>6</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value3>
-		<value0><m_layer>1</m_layer>
-			<m_layer>1</m_layer><m_position_in_room.x>2</m_position_in_room.x>
-			<m_position_in_room.y>5</m_position_in_room.y>
+		</value46>
+		<value47>
+			<m_layer>1</m_layer>
+			<m_position_in_room.x>5</m_position_in_room.x>
+			<m_position_in_room.y>7</m_position_in_room.y>
 			<m_texture_position.x>0</m_texture_position.x>
 			<m_texture_position.y>0</m_texture_position.y>
 			<m_texture_name>grass_tile.png</m_texture_name>
 			<m_walkable>true</m_walkable>
-		</value0>
-		<value1>
-			<m_layer>1</m_layer><m_position_in_room.x>3</m_position_in_room.x>
-			<m_position_in_room.y>5</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value1>
-		<value2>
-			<m_layer>1</m_layer><m_position_in_room.x>4</m_position_in_room.x>
-			<m_position_in_room.y>5</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value2>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>5</m_position_in_room.x>
-			<m_position_in_room.y>5</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>6</m_position_in_room.x>
-			<m_position_in_room.y>5</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>7</m_position_in_room.x>
-			<m_position_in_room.y>5</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
-		<value3>
-			<m_layer>1</m_layer><m_position_in_room.x>8</m_position_in_room.x>
-			<m_position_in_room.y>5</m_position_in_room.y>
-			<m_texture_position.x>0</m_texture_position.x>
-			<m_texture_position.y>0</m_texture_position.y>
-			<m_texture_name>grass_tile.png</m_texture_name>
-			<m_walkable>true</m_walkable>
-		</value3>
+		</value47>
 	</m_tiles>
 </cereal>
 
