@@ -8,7 +8,7 @@
 
 int main() {
   spdlog::set_level(spdlog::level::debug);
-  spdlog::set_pattern("[%H:%M:%S:%e] [%^%=7l%$] [%17s:%-3#] -- %v");
+  spdlog::set_pattern("[%H:%M:%S:%e] [%^%=8l%$] [%17s:%-3#] -- %v");
 
   SPDLOG_INFO("main()");
 

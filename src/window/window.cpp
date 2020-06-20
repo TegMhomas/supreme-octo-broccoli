@@ -13,17 +13,7 @@ Window::Window() {
   m_window.create(sf::VideoMode(800, 600), "SUPREME-OCTO-RPG");
   m_window.setFramerateLimit(360);
 
-  std::string path_prefix = "";
-
-  if (std::filesystem::exists("resources")) {
-    path_prefix = "resources/";
-    SPDLOG_INFO("found resources: " + path_prefix);
-  } else if (std::filesystem::exists("../../../resources")) {
-    path_prefix = "../../../resources/";
-    SPDLOG_INFO("found resources at: " + path_prefix);
-  } else {
-    SPDLOG_CRITICAL("can't find directory: resources");
-  }
+  std::string path_prefix = FindPathToResources();
 
   SPDLOG_INFO("found resources");
 
@@ -43,7 +33,19 @@ Window::Window() {
     }
   }
 
-  SPDLOG_INFO("loaded textures");
+  SPDLOG_INFO("loaded tile textures");
+
+  for (auto& path :
+       std::filesystem::directory_iterator(path_prefix + "Entities")) {
+
+    auto name = path.path().filename().string();
+
+    if (!m_textures[name].loadFromFile(path_prefix + "Entities/" + name)) {
+      SPDLOG_WARN("could not load: " + path_prefix + "Entities/" + name);
+    }
+  }
+
+  SPDLOG_INFO("loaded entity textures");
 
   SPDLOG_INFO("window constructed nicely, all resources loaded");
   SPDLOG_INFO("current path: " + std::filesystem::current_path().string());
