@@ -2,6 +2,7 @@
 
 #define SPDLOG_ACTIVE_LEVEL SPDLOG_LEVEL_DEBUG
 #include <spdlog/spdlog.h>
+#include <filesystem>
 
 // logger levels:
 // SPDLOG_TRACE("trace, syf");
@@ -10,3 +11,5 @@
 // SPDLOG_WARN("warn, ostrzeżenie");
 // SPDLOG_ERROR("error, błąd");
 // SPDLOG_CRITICAL("critical, błąd krytyczny");
+
+std::string FindPathToResources();

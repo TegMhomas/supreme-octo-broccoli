@@ -29,6 +29,27 @@ RenderStuffs StateGame::GiveRenderStuffs() {
   }
 
   {
+    LayerAndTexture lat{ 1, "" };
+    Quad quad;
+
+    for (const auto& entity : m_entities) {
+      quad = Quad(static_cast<sf::Vector2f>(entity.m_position) -
+                    sf::Vector2f(-0.5f, -0.5f),
+                  { 1.f, 1.f });
+
+      lat.texture = entity.m_texture_name;
+      lat.layer = 5;
+
+      if (render_stuffs.quads.contains(lat)) {
+        render_stuffs.quads[lat].push_back(quad);
+      } else {
+        render_stuffs.quads[lat] = std::vector<Quad>();
+        render_stuffs.quads[lat].push_back(quad);
+      }
+    }
+  }
+
+  {
     Text text;
     text.pos = sf::Vector2f(10.0f, 10.0f);
     // text.str = "game";

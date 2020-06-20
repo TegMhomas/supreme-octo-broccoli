@@ -4,7 +4,7 @@
 
 class StateBoot : public BaseGameState {
 private:
-  bool done = false;
+  bool m_done = false;
 
 public:
   StateBoot();

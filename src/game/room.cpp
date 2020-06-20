@@ -26,13 +26,13 @@ Room::Room() {
 Room::Room(const std::string _room_config_name) {
   std::ifstream is;
 
-  is.open("resources/Rooms/" + _room_config_name);
+  std::string path_prefix = FindPathToResources();
+
+  is.open(path_prefix + "Rooms/" + _room_config_name);
+
   if (!is.is_open()) {
-    is.open("../../../resources/Rooms/" + _room_config_name);
-    if (!is.is_open()) {
-      SPDLOG_ERROR("can't find: " + _room_config_name);
-      std::terminate();
-    }
+    SPDLOG_ERROR("can't find: " + _room_config_name);
+    std::terminate();
   }
 
   std::unique_ptr<cereal::XMLInputArchive> archive =

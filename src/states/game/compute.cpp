@@ -4,7 +4,7 @@
 #include "utils.hpp"
 
 void StateGame::Compute(StackMachine& _stack_machine) {
-  if (done == true) {
+  if (m_done == true) {
     _stack_machine.m_game_stack.pop();
   }
 }
