@@ -16,7 +16,7 @@ void StateBoot::GetEvents(const std::vector<sf::Event>& _events) {
     if (event.type == sf::Event::Closed) {
       m_done = true;
     } else if (event.type == sf::Event::KeyPressed) {
-      if (event.key.code == sf::Keyboard::Escape) {
+      if (event.key.code == sf::Keyboard::Enter) {
         m_done = true;
       }
     }
@@ -44,7 +44,7 @@ RenderStuffs StateBoot::GiveRenderStuffs() {
   {
     Text text;
     text.pos = sf::Vector2f(10.0f, 10.0f);
-    text.str = "Press Escape To START!";
+    text.str = "Press Enter To START!";
     render_stuffs.texts.push_back(text);
   }
 

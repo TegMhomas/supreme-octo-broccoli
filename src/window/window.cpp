@@ -11,7 +11,8 @@ Window::Window() {
   SPDLOG_INFO("constructing the window");
 
   m_window.create(sf::VideoMode(800, 600), "SUPREME-OCTO-RPG");
-  m_window.setFramerateLimit(360);
+  m_window.setFramerateLimit(60);
+  m_window.setVerticalSyncEnabled(true);
 
   std::string path_prefix = FindPathToResources();
 

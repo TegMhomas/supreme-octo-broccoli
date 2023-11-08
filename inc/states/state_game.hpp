@@ -10,6 +10,7 @@ private:
   bool m_done = false;
   Room m_current_room;
   std::vector<Entity> m_entities;
+  sf::Clock frameClock;
 
 public:
   StateGame();
