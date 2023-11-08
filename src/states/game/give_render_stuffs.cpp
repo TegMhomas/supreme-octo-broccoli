@@ -57,7 +57,7 @@ RenderStuffs StateGame::GiveRenderStuffs() {
   }
 
   render_stuffs.view.setSize(10.f, 10.f);
-  render_stuffs.view.setCenter(3.f, 3.f);
+  render_stuffs.view.setCenter(5.f, 5.f);
 
   return render_stuffs;
 }
