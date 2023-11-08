@@ -10,7 +10,8 @@ private:
   bool m_done = false;
   Room m_current_room;
   std::vector<Entity> m_entities;
-  sf::Clock frameClock;
+  sf::Clock m_frame_clock;
+  std::map<sf::Keyboard::Key, bool> m_key_map;
 
 public:
   StateGame();

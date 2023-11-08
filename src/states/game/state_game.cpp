@@ -13,6 +13,10 @@ StateGame::StateGame() {
   player.m_texture_name = "kmiecik.png";
   player.m_texture_position = { 0, 0 };
   player.m_texture_size = { 64, 64 };
+  m_key_map[sf::Keyboard::Up] = false;
+  m_key_map[sf::Keyboard::Down] = false;
+  m_key_map[sf::Keyboard::Left] = false;
+  m_key_map[sf::Keyboard::Right] = false;
 }
 
 StateGame::~StateGame() {
