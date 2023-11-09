@@ -7,6 +7,7 @@ void Window::Render(const RenderStuffs& _render_stuffs) {
   sf::Text sftext;
   sftext.setFont(m_font);
 
+
   m_window.setView(_render_stuffs.view);
 
   {
@@ -39,6 +40,8 @@ void Window::Render(const RenderStuffs& _render_stuffs) {
       m_window.draw(sf_text);
     }
   }
+
+
 
   {
     float current_time = m_fps_clock.restart().asSeconds();

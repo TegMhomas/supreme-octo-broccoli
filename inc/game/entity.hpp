@@ -48,6 +48,11 @@ public:
   const sf::Vector2i& getTexturePosition() const;
   const sf::Vector2i& getTextureSize() const;
 
+  int getHp() const { return m_hp; }
+  int getSp() const { return m_sp; }
+  int getDefense() const { return m_defense; }
+  int getAttack() const { return m_attack; }
+
   Type getType() const;
 
   void setAcceleration(const sf::Vector2f& acc);

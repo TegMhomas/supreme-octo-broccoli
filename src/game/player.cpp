@@ -9,4 +9,5 @@ void Player::update(sf::Time deltaTime) {
   Entity::update(deltaTime);
 
   //recoverStamina(1);
+  //heal(1);
 }

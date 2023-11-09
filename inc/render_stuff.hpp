@@ -49,4 +49,5 @@ struct RenderStuffs {
   std::vector<std::string> texts_for_textbox;
 
   sf::View view;
+
 };

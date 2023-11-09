@@ -56,6 +56,24 @@ RenderStuffs StateGame::GiveRenderStuffs() {
     render_stuffs.texts.push_back(text);
   }
 
+   auto& player =
+    *std::find_if(m_entities.begin(), m_entities.end(), [](const auto& ent) {
+      return ent->getType() == Entity::Type::Player;
+    });
+
+  // Create Text objects and add them to the render_stuffs
+  render_stuffs.texts.push_back(Text{
+    sf::Vector2f(10.0f, 10.0f), "HP: " + std::to_string(player->getHp()) });
+  render_stuffs.texts.push_back(Text{
+    sf::Vector2f(10.0f, 30.0f), "SP: " + std::to_string(player->getSp()) });
+  render_stuffs.texts.push_back(
+    Text{ sf::Vector2f(10.0f, 50.0f),
+          "DEF: " + std::to_string(player->getDefense()) });
+  render_stuffs.texts.push_back(
+    Text{ sf::Vector2f(10.0f, 70.0f),
+          "ATK: " + std::to_string(player->getAttack()) });
+
+
   render_stuffs.view.setSize(10.f, 10.f);
   render_stuffs.view.setCenter(5.f, 5.f);
 
