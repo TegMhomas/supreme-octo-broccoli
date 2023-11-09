@@ -33,11 +33,11 @@ RenderStuffs StateGame::GiveRenderStuffs() {
     Quad quad;
 
     for (const auto& entity : m_entities) {
-      quad = Quad(static_cast<sf::Vector2f>(entity.m_position) -
+      quad = Quad(static_cast<sf::Vector2f>(entity->getPosition()) -
                     sf::Vector2f(-0.5f, -0.5f),
                   { 1.f, 1.f });
 
-      lat.texture = entity.m_texture_name;
+      lat.texture = entity->getTextureName();
       lat.layer = 5;
 
       if (render_stuffs.quads.contains(lat)) {

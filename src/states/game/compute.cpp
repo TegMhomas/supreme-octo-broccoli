@@ -11,28 +11,32 @@ void StateGame::Compute(StackMachine& _stack_machine) {
 
   sf::Time deltaTime = m_frame_clock.restart();
 
+  for (auto& entityPtr : m_entities) {
+    Entity& entity = *entityPtr; 
 
-  for (auto& entity : m_entities) {
-    if (entity.m_type == Entity::Type::Player) {
+    if (entity.getType() == Entity::Type::Player) { 
 
-      entity.m_acceleration = sf::Vector2f(0.f, 0.f);
+      sf::Vector2f acceleration(0.f, 0.f);
 
       if (m_key_map[sf::Keyboard::Up]) {
-        entity.m_acceleration.y -= Entity::accelerationRate;
+        acceleration.y -= Entity::accelerationRate;
       }
       if (m_key_map[sf::Keyboard::Down]) {
-        entity.m_acceleration.y += Entity::accelerationRate;
+        acceleration.y += Entity::accelerationRate;
       }
       if (m_key_map[sf::Keyboard::Left]) {
-        entity.m_acceleration.x -= Entity::accelerationRate;
+        acceleration.x -= Entity::accelerationRate;
       }
       if (m_key_map[sf::Keyboard::Right]) {
-        entity.m_acceleration.x += Entity::accelerationRate;
+        acceleration.x += Entity::accelerationRate;
       }
 
+      entity.setAcceleration(acceleration);
       entity.update(deltaTime);
     }
+
+    if (entity.getType() == Entity::Type::Enemy) {
+
+    }
   }
-
-
 }
