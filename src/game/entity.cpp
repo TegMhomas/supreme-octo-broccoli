@@ -1,13 +1,15 @@
 #include "game/entity.hpp"
 
-Entity::Entity(Type type, int hp, int sp, int defense, int attack, float movementSpeedModifier): m_type(type), m_hp(hp), m_sp(sp), m_defense(defense), m_attack(attack), m_movement_speed(movementSpeedModifier), m_velocity(sf::Vector2f(0.f, 0.f)), m_acceleration(sf::Vector2f(0.f, 0.f)) {}
+Entity::Entity(Type type): m_type(type), stats(), m_velocity(sf::Vector2f(0.f, 0.f)), m_acceleration(sf::Vector2f(0.f, 0.f)) {}
+
+Entity::Entity(Type type, const EntityStats& statsValues): m_type(type), stats(statsValues),  m_velocity(sf::Vector2f(0.f, 0.f)), m_acceleration(sf::Vector2f(0.f, 0.f)) {}
 
 Entity::~Entity() {}
 
 void Entity::update(sf::Time deltaTime) {
   m_velocity += m_acceleration * deltaTime.asSeconds();
 
-  float maxAdjustedSpeed = baseSpeed * m_movement_speed;
+  float maxAdjustedSpeed = baseSpeed * stats.getStat(EntityStats::MovementSpeed);
   float currentSpeed = std::hypot(m_velocity.x, m_velocity.y); 
   if (currentSpeed > maxAdjustedSpeed) {
     m_velocity = maxAdjustedSpeed / currentSpeed * m_velocity;
@@ -32,25 +34,21 @@ void Entity::update(sf::Time deltaTime) {
 }
 
 
-void Entity::takeDamage(int amount) {
-  int damageTaken = std::max(amount - m_defense, 0);
-  m_hp -= damageTaken;
-  m_hp = std::clamp(m_hp, 0, m_hp);
+void Entity::takeDamage(float amount) {
+  int damageTaken = std::max(amount - stats.getStat(EntityStats::Defense), 0.0f);
+  stats.modifyStat(EntityStats::HP, -damageTaken);
 }
 
-void Entity::heal(int amount) {
-  m_hp += amount;
-  m_hp = std::clamp(m_hp, 0, 100); 
+void Entity::heal(float amount) {
+  stats.modifyStat(EntityStats::HP, amount);
 }
 
-void Entity::useStamina(int amount) {
-  m_sp -= amount;
-  m_sp = std::clamp(m_sp, 0, m_sp);
+void Entity::useStamina(float amount) {
+  stats.modifyStat(EntityStats::SP, -amount);
 }
 
-void Entity::recoverStamina(int amount) {
-  m_sp += amount;
-  m_sp = std::clamp(m_sp, 0, 100); 
+void Entity::recoverStamina(float amount) {
+  stats.modifyStat(EntityStats::SP, amount);
 }
 
 void Entity::setTextureName(const std::string& name) {

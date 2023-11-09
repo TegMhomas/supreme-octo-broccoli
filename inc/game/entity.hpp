@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include "entity_stats.hpp"
 
 class Entity {
 public:
@@ -18,25 +19,24 @@ public:
 
   Type m_type;
 
-  int m_hp;
-  int m_sp;
-  int m_defense;
-  int m_attack;
-  float m_movement_speed = 1.0f;
+  EntityStats stats;
 
   static constexpr float baseSpeed = 5.0f;
   static constexpr float accelerationRate = 12.5f;
   static constexpr float decelerationRate = 12.5f;
 
-  Entity(Type type, int hp, int sp, int defense, int attack, float movementSpeedModifier);
+
+  Entity(Type type);
+  Entity(Type type, const EntityStats &stats);
+
   virtual ~Entity();
 
   virtual void update(sf::Time deltaTime);
 
-  void takeDamage(int amount);
-  void heal(int amount);
-  void useStamina(int amount);
-  void recoverStamina(int amount);
+  void takeDamage(float amount);
+  void heal(float amount);
+  void useStamina(float amount);
+  void recoverStamina(float amount);
 
   void setTextureName(const std::string& name);
   void setTexturePosition(const sf::Vector2i& position);
@@ -47,11 +47,6 @@ public:
   const std::string& getTextureName() const;
   const sf::Vector2i& getTexturePosition() const;
   const sf::Vector2i& getTextureSize() const;
-
-  int getHp() const { return m_hp; }
-  int getSp() const { return m_sp; }
-  int getDefense() const { return m_defense; }
-  int getAttack() const { return m_attack; }
 
   Type getType() const;
 

@@ -2,6 +2,7 @@
 #include "stack_machine.hpp"
 #include "states/state_game.hpp"
 #include "utils.hpp"
+#include <iomanip>
 
 RenderStuffs StateGame::GiveRenderStuffs() {
   RenderStuffs render_stuffs;
@@ -61,17 +62,19 @@ RenderStuffs StateGame::GiveRenderStuffs() {
       return ent->getType() == Entity::Type::Player;
     });
 
-  // Create Text objects and add them to the render_stuffs
-  render_stuffs.texts.push_back(Text{
-    sf::Vector2f(10.0f, 10.0f), "HP: " + std::to_string(player->getHp()) });
-  render_stuffs.texts.push_back(Text{
-    sf::Vector2f(10.0f, 30.0f), "SP: " + std::to_string(player->getSp()) });
-  render_stuffs.texts.push_back(
-    Text{ sf::Vector2f(10.0f, 50.0f),
-          "DEF: " + std::to_string(player->getDefense()) });
-  render_stuffs.texts.push_back(
-    Text{ sf::Vector2f(10.0f, 70.0f),
-          "ATK: " + std::to_string(player->getAttack()) });
+   auto floatToString = [](float value) {
+     std::stringstream stream;
+     stream << std::fixed << std::setprecision(1) << value;
+     return stream.str();
+   };
+   render_stuffs.texts.push_back(Text{ sf::Vector2f(10.0f, 10.0f),
+     "HP: " + floatToString(player->stats.getStat(EntityStats::HP)) });
+   render_stuffs.texts.push_back(Text{ sf::Vector2f(10.0f, 30.0f),
+     "SP: " + floatToString(player->stats.getStat(EntityStats::SP)) });
+   render_stuffs.texts.push_back(Text{sf::Vector2f(10.0f, 50.0f),
+           "DEF: " + floatToString(player->stats.getStat(EntityStats::Defense)) });
+   render_stuffs.texts.push_back(Text{sf::Vector2f(10.0f, 70.0f),
+           "ATK: " + floatToString(player->stats.getStat(EntityStats::Attack)) });
 
 
   render_stuffs.view.setSize(10.f, 10.f);

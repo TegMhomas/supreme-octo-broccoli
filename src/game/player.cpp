@@ -1,8 +1,7 @@
 #include "game/player.hpp"
 
-Player::Player(int hp, int sp, int defense, int attack, float movementSpeed)
-  : Entity(Type::Player, hp, sp, defense, attack, movementSpeed) {
-}
+Player::Player(const EntityStats& stats) : Entity(Type::Player, stats) {}
+Player::Player() : Entity(Type::Player) {}
 
 void Player::update(sf::Time deltaTime) {
 

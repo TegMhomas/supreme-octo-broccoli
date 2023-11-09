@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 file(GLOB_RECURSE sources CONFIGURE_DEPENDS src/*.cpp)
 file(GLOB_RECURSE headers CONFIGURE_DEPENDS inc/*.hpp)
 
-add_executable(sob ${sources} ${headers})
+add_executable(sob ${sources} ${headers} "src/game/entity_stats.cpp")
 target_include_directories(sob PRIVATE ${CMAKE_SOURCE_DIR}/inc)
 
 find_package(SFML COMPONENTS system window graphics CONFIG REQUIRED)
