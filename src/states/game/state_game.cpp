@@ -9,7 +9,6 @@ StateGame::StateGame() {
 
   m_entities.push_back(Entity());
   auto& player = m_entities.back();
-  player.m_type = Entity::Type::Player;
   player.m_texture_name = "kmiecik.png";
   player.m_texture_position = { 0, 0 };
   player.m_texture_size = { 64, 64 };
