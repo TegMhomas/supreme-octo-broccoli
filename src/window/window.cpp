@@ -18,7 +18,11 @@ Window::Window() {
 
   SPDLOG_INFO("found resources");
 
-  if (!(m_font.loadFromFile(path_prefix + "fonts/SourceCodePro-Regular.ttf"))) {
+  /* if (!(m_font.loadFromFile(path_prefix +
+                                 "fonts/SourceCodePro-Regular.ttf"))) {
+    SPDLOG_CRITICAL("can't load font");
+  }  */
+  if (!(m_font.loadFromFile(path_prefix + "fonts/VTC-Tribal-Regular.ttf"))) {
     SPDLOG_CRITICAL("can't load font");
   }
 
