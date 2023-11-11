@@ -36,8 +36,7 @@ RenderStuffs StateGame::GiveRenderStuffs() {
     Quad quad;
 
     for (const auto& entity : m_entities) {
-      quad = Quad(static_cast<sf::Vector2f>(entity->getPosition()) -
-                    sf::Vector2f(-0.5f, -0.5f),
+      quad = Quad(static_cast<sf::Vector2f>(entity->getPosition()) - sf::Vector2f(-0.5f, -0.5f),
                   { 1.f, 1.f },
                   { static_cast<sf::Vector2f>(entity->getTexturePosition()) },
                   { 64.f, 64.f });
@@ -61,27 +60,25 @@ RenderStuffs StateGame::GiveRenderStuffs() {
     render_stuffs.texts.push_back(text);
   }
 
-  auto& player =
-    *std::find_if(m_entities.begin(), m_entities.end(), [](const auto& ent) {
-      return ent->getType() == Entity::Type::Player;
-    });
+  auto& player = *std::find_if(
+    m_entities.begin(), m_entities.end(), [](const auto& ent) { return ent->getType() == Entity::Type::Player; });
 
-   auto floatToString = [](float value) {
-     std::stringstream stream;
-     stream << std::fixed << std::setprecision(1) << value;
-     return stream.str();
-   };
-   render_stuffs.texts.push_back(Text{ sf::Vector2f(10.0f, 10.0f),
-     "HP: " + floatToString(player->stats.getStat(EntityStats::HP)) });
-   render_stuffs.texts.push_back(Text{ sf::Vector2f(10.0f, 30.0f),
-     "SP: " + floatToString(player->stats.getStat(EntityStats::SP)) });
-   render_stuffs.texts.push_back(Text{sf::Vector2f(10.0f, 50.0f),
-           "DEF: " + floatToString(player->stats.getStat(EntityStats::Defense)) });
-   render_stuffs.texts.push_back(Text{sf::Vector2f(10.0f, 70.0f),
-           "ATK: " + floatToString(player->stats.getStat(EntityStats::Attack)) });
+  auto floatToString = [](float value) {
+    std::stringstream stream;
+    stream << std::fixed << std::setprecision(1) << value;
+    return stream.str();
+  };
+  render_stuffs.texts.push_back(
+    Text{ sf::Vector2f(10.0f, 10.0f), "HP: " + floatToString(player->stats.getStat(EntityStats::HP)) });
+  render_stuffs.texts.push_back(
+    Text{ sf::Vector2f(10.0f, 30.0f), "SP: " + floatToString(player->stats.getStat(EntityStats::SP)) });
+  render_stuffs.texts.push_back(
+    Text{ sf::Vector2f(10.0f, 50.0f), "DEF: " + floatToString(player->stats.getStat(EntityStats::Defense)) });
+  render_stuffs.texts.push_back(
+    Text{ sf::Vector2f(10.0f, 70.0f), "ATK: " + floatToString(player->stats.getStat(EntityStats::Attack)) });
 
-  render_stuffs.view.setSize(40.f, 40.f);
-  render_stuffs.view.setCenter(5.f, 5.f);
+  render_stuffs.view.setSize(sf::Vector2f{ 20.f, 20.f });
+  render_stuffs.view.setCenter(player->getPosition());
 
   return render_stuffs;
 }
