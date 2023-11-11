@@ -35,7 +35,8 @@ RenderStuffs StateBoot::GiveRenderStuffs() {
   {
     LayerAndTexture lat{ 1, "" };
 
-    Quad quad({ 100.f, 100.f }, { 140.f, 140.f });
+    Quad quad(
+      { 100.f, 100.f }, { 140.f, 140.f }, { 100.f, 100.f }, { 140.f, 140.f });
     quad.SetColor(sf::Color::Yellow);
 
     render_stuffs.quads[lat].push_back(quad);

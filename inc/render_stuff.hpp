@@ -9,16 +9,19 @@ struct Quad {
 
   Quad() {}
 
-  Quad(sf::Vector2f _xy, sf::Vector2f _wh) {
-    arr[0].position = _xy;
-    arr[1].position = { _xy.x + _wh.x, _xy.y };
-    arr[2].position = _xy + _wh;
-    arr[3].position = { _xy.x, _xy.y + _wh.y };
+  Quad(sf::Vector2f _world_xy,
+       sf::Vector2f _world_wh,
+       sf::Vector2f _tex_xy,
+       sf::Vector2f _tex_wh) {
+    arr[0].position = _world_xy;
+    arr[1].position = _world_xy + sf::Vector2f{ _world_wh.x, 0.0 };
+    arr[2].position = _world_xy + _world_wh;
+    arr[3].position = _world_xy + sf::Vector2f{ 0.0, _world_wh.y };
 
-    arr[0].texCoords = { 0.f, 0.f };
-    arr[1].texCoords = { 64.f, 0.f };
-    arr[2].texCoords = { 64.f, 64.f };
-    arr[3].texCoords = { 0.f, 64.f };
+    arr[0].texCoords = _tex_xy;
+    arr[1].texCoords = _tex_xy + sf::Vector2f{ _tex_wh.x, 0.0 };
+    arr[2].texCoords = _tex_xy + _tex_wh;
+    arr[3].texCoords = _tex_xy + sf::Vector2f{ 0.0, _tex_wh.y };
   }
 
   void SetColor(const sf::Color& _color) {
@@ -49,5 +52,4 @@ struct RenderStuffs {
   std::vector<std::string> texts_for_textbox;
 
   sf::View view;
-
 };

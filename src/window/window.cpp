@@ -33,6 +33,10 @@ Window::Window() {
 
     auto name = path.path().filename().string();
 
+    if (name.ends_with(".tsj")) {
+      continue;
+    }
+
     if (!m_textures[name].loadFromFile(path_prefix + "Tiles/" + name)) {
       SPDLOG_WARN("could not load: " + path_prefix + "Tiles/" + name);
     }

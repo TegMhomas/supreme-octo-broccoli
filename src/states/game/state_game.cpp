@@ -5,13 +5,12 @@
 
 StateGame::StateGame() {
   SPDLOG_INFO("state game constructing");
-  m_current_room = Room("L0.txt");
+  m_current_room = Room::loadFromTmj("room-1.tmj");
 
-  auto player = std::make_unique<Player>(); 
+  auto player = std::make_unique<Player>();
   player->setTextureName("kmiecik.png");
   player->setTexturePosition({ 0, 0 });
   player->setTextureSize({ 64, 64 });
-
 
   m_entities.push_back(std::move(player));
   m_key_map[sf::Keyboard::Up] = false;
