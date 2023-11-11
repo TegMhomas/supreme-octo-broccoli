@@ -5,4 +5,5 @@ AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
 BreakBeforeBraces: Custom
 SortIncludes: false
+ColumnLimit: 120
 ...
