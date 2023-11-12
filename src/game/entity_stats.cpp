@@ -10,8 +10,8 @@ EntityStats::EntityStats(const std::unordered_map<StatType, float>& initialValue
 }
 
 void EntityStats::setDefaultValues() {
-  m_stats[HP] = 100.0f;    
-  m_stats[SP] = 100.0f;     
+  m_stats[HP] = 10.0f;    
+  m_stats[SP] = 10.0f;     
   m_stats[Defense] = 0.0f; 
   m_stats[Attack] = 10.0f; 
   m_stats[MovementSpeed] = 1.0f; 

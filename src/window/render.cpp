@@ -41,7 +41,18 @@ void Window::Render(const RenderStuffs& _render_stuffs) {
     }
   }
 
-
+      // drawing hearts as quads
+  for (const auto& [lat, quads] : _render_stuffs.quads) {
+    const sf::Texture& texture = m_textures.at(lat.texture);
+    for (const auto& quad : quads) {
+      sf::VertexArray vertices(sf::Quads, 4);
+      for (std::size_t i = 0; i < 4; ++i) {
+        vertices[i].position = quad.arr[i].position;
+        vertices[i].texCoords = quad.arr[i].texCoords;
+      }
+      m_window.draw(vertices, &texture);
+    }
+  }
 
   {
     float current_time = m_fps_clock.restart().asSeconds();

@@ -52,7 +52,18 @@ Window::Window() {
     if (!m_textures[name].loadFromFile(path_prefix + "Entities/" + name)) {
       SPDLOG_WARN("could not load: " + path_prefix + "Entities/" + name);
     }
+  }  
+  for (auto& path :
+       std::filesystem::directory_iterator(path_prefix + "Icons")) {
+
+    auto name = path.path().filename().string();
+
+    if (!m_textures[name].loadFromFile(path_prefix + "Icons/" + name)) {
+      SPDLOG_WARN("could not load: " + path_prefix + "Icons/" + name);
+    }
   }
+
+
 
   SPDLOG_INFO("loaded entity textures");
 
