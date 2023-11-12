@@ -5,12 +5,14 @@
 
 class Room {
 private:
+  /// @brief Room size. Max x and y of its tiles.
   sf::Vector2i m_size;
+
+  /// @brief
   std::vector<Tile> m_tiles;
 
 public:
   Room();
-  Room(const std::string _config_name);
   ~Room();
 
   Room(const Room& other) = delete;
@@ -23,6 +25,8 @@ public:
   /// @param room Filename of room, from inside the `resources\Rooms` dir.
   /// @return Loaded room, or empty room if error.
   static Room loadFromTmj(const std::string& room_filename);
+
+  sf::Vector2i getRoomSize();
 
   std::vector<Tile>& GetAllTiles();
 

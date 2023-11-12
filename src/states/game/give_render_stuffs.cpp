@@ -77,8 +77,17 @@ RenderStuffs StateGame::GiveRenderStuffs() {
   render_stuffs.texts.push_back(
     Text{ sf::Vector2f(10.0f, 70.0f), "ATK: " + floatToString(player->stats.getStat(EntityStats::Attack)) });
 
-  render_stuffs.view.setSize(sf::Vector2f{ 20.f, 20.f });
-  render_stuffs.view.setCenter(player->getPosition());
+  // view:
+  {
+    auto room_size = sf::Vector2f{ m_current_room.getRoomSize() };
+    auto view_size = sf::Vector2f{ 20.f, 20.f };
+    auto view_center =
+      sf::Vector2f{ std::clamp(player->getPosition().x, 0.f + view_size.x * 0.25f, room_size.x - view_size.x * 0.25f),
+                    std::clamp(player->getPosition().y, 0.f + view_size.y * 0.25f, room_size.y - view_size.y * 0.25f) };
+
+    render_stuffs.view.setSize(view_size);
+    render_stuffs.view.setCenter(view_center);
+  }
 
   return render_stuffs;
 }
