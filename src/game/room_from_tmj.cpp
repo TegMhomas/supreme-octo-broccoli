@@ -10,7 +10,7 @@ Room Room::loadFromTmj(const std::string& room_filename) {
   const auto parse_status = map->getStatus();
 
   if (parse_status != tson::ParseStatus::OK) {
-    SPDLOG_WARN("invalid room path: {}; parse status: {}", path, parse_status);
+    SPDLOG_WARN("invalid room path: {}; parse status: {}", path, static_cast<int>(parse_status));
     return {};
   }
 

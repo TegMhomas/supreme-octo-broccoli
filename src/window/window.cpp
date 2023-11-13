@@ -16,7 +16,7 @@ Window::Window() {
 
   std::string path_prefix = FindPathToResources();
 
-  SPDLOG_INFO("found resources");
+  SPDLOG_INFO("found resources at " + path_prefix);
 
   /* if (!(m_font.loadFromFile(path_prefix +
                                  "fonts/SourceCodePro-Regular.ttf"))) {
@@ -53,14 +53,13 @@ Window::Window() {
       SPDLOG_WARN("could not load: " + path_prefix + "Entities/" + name);
     }
   }  
-  for (auto& path :
-       std::filesystem::directory_iterator(path_prefix + "Icons")) {
+  std::string textureName = "hp_full.png";                          
+  std::string texturePath = path_prefix + "Icons/" + textureName; 
 
-    auto name = path.path().filename().string();
-
-    if (!m_textures[name].loadFromFile(path_prefix + "Icons/" + name)) {
-      SPDLOG_WARN("could not load: " + path_prefix + "Icons/" + name);
-    }
+  if (!m_textures[textureName].loadFromFile(texturePath)) {
+    SPDLOG_ERROR("Could not load texture from path: {}", texturePath);
+  } else {
+    SPDLOG_INFO("Loaded texture: {}", textureName);
   }
 
 

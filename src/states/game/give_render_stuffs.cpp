@@ -69,25 +69,31 @@ RenderStuffs StateGame::GiveRenderStuffs() {
     return stream.str();
   };
 
- 
-  const sf::Vector2f heartSize(11.f, 10.f);
-  const sf::Vector2f textureHeartSize(11.f, 10.f); 
+  const int playerHP = static_cast<int>(player->stats.getStat(EntityStats::HP));
+  const sf::Vector2f heartSize(32.f, 32.f); 
+  const sf::Vector2f textureHeartSize(11.f, 10.f);
+  const sf::Vector2f heartStartPosition(10.f, 10.f);
+  const float heartSpacing = 5.f;
+  const int heartLayer = 5; 
+  const std::string heartTextureKey = "hp_full.png";
 
-  for (int i = 0; i < static_cast<int>(player->stats.getStat(EntityStats::HP)); i++) {
-    const sf::Vector2f heartPosition(10.f + i * (heartSize.x + 3.f), 10.f); 
-    render_stuffs.quads[{ 5, "hp_full.png" }].emplace_back(
-      heartPosition, heartSize, sf::Vector2f(0.f, 0.f), textureHeartSize);
+
+  LayerAndTexture heartLat{ heartLayer, heartTextureKey };
+  render_stuffs.heartIcons[heartLat].clear(); 
+
+  for (int i = 0; i < playerHP; ++i) {
+    sf::Vector2f heartPosition = heartStartPosition + sf::Vector2f(i * (heartSize.x + heartSpacing), 0);
+    render_stuffs.heartIcons[heartLat].emplace_back(heartPosition, heartSize, sf::Vector2f(0.f, 0.f), textureHeartSize);
   }
-
-  /* render_stuffs.texts.push_back(
-    Text{ sf::Vector2f(10.0f, 10.0f), "HP: " + floatToString(player->stats.getStat(EntityStats::HP)) });
+   /* render_stuffs.texts.push_back(
+    Text{ sf::Vector2f(10.0f, 10.0f), "HP: " + floatToString(player->stats.getStat(EntityStats::HP)) });*/
   render_stuffs.texts.push_back(
-    Text{ sf::Vector2f(10.0f, 30.0f), "SP: " + floatToString(player->stats.getStat(EntityStats::SP)) });
+    Text{ sf::Vector2f(10.0f, 50.0f), "SP: " + floatToString(player->stats.getStat(EntityStats::SP)) });
   render_stuffs.texts.push_back(
-    Text{ sf::Vector2f(10.0f, 50.0f), "DEF: " + floatToString(player->stats.getStat(EntityStats::Defense)) });
+    Text{ sf::Vector2f(10.0f, 90.0f), "DEF: " + floatToString(player->stats.getStat(EntityStats::Defense)) });
   render_stuffs.texts.push_back(
-    Text{ sf::Vector2f(10.0f, 70.0f), "ATK: " + floatToString(player->stats.getStat(EntityStats::Attack)) });
-    */
+    Text{ sf::Vector2f(10.0f, 130.0f), "ATK: " + floatToString(player->stats.getStat(EntityStats::Attack)) });
+    
   render_stuffs.view.setSize(sf::Vector2f{ 20.f, 20.f });
   render_stuffs.view.setCenter(player->getPosition());
 
