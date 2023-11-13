@@ -46,6 +46,7 @@ struct Text {
 struct RenderStuffs {
   // [[warstwa, textura], czworokąt]
   std::map<LayerAndTexture, std::vector<Quad>> quads;
+  std::map<LayerAndTexture, std::vector<Quad>> heartIcons;
 
   std::vector<Text> texts;
 

@@ -9,4 +9,5 @@ void Player::update(sf::Time deltaTime) {
 
   //recoverStamina(1);
   //heal(1);
+  //takeDamage(1);
 }

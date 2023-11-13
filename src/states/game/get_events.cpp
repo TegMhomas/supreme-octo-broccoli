@@ -20,7 +20,7 @@ void StateGame::GetEvents(const std::vector<sf::Event>& _events) {
         if (playerIt != m_entities.end()) {
           Player* player = dynamic_cast<Player*>(playerIt->get());
           if (player) {
-            player->takeDamage(10);
+            player->takeDamage(1);
           }
         }
       } else if (event.key.code == sf::Keyboard::H) {    
@@ -28,7 +28,7 @@ void StateGame::GetEvents(const std::vector<sf::Event>& _events) {
         if (playerIt != m_entities.end()) {
           Player* player = dynamic_cast<Player*>(playerIt->get());
           if (player) {
-            player->heal(10);
+            player->heal(1);
           }
         }
       }

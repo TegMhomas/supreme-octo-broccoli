@@ -40,6 +40,24 @@ void Window::Render(const RenderStuffs& _render_stuffs) {
       m_window.draw(sf_text);
     }
   }
+  {
+    for (const auto& [lat, hearts] : _render_stuffs.heartIcons) {
+      auto textureIt = m_textures.find(lat.texture);
+      if (textureIt != m_textures.end()) {
+        const sf::Texture& texture = textureIt->second;
+        for (const auto& heartQuad : hearts) {
+          sf::VertexArray heartVertices(sf::Quads, 4);
+          for (std::size_t i = 0; i < 4; ++i) {
+            heartVertices[i].position = heartQuad.arr[i].position;
+            heartVertices[i].texCoords = heartQuad.arr[i].texCoords;
+          }
+          m_window.draw(heartVertices, &texture);
+        }
+      } else {
+        SPDLOG_ERROR("Heart texture not found: {}", lat.texture);
+      }
+    }
+  }
 
 
 
