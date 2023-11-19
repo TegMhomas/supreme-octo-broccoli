@@ -10,7 +10,7 @@ class StateGame : public BaseGameState {
 private:
   bool m_done = false;
   Room m_current_room;
-  std::vector<std::unique_ptr<Entity>> m_entities;
+  std::vector<std::shared_ptr<Entity>> m_entities;
   sf::Clock m_frame_clock;
   std::map<sf::Keyboard::Key, bool> m_key_map;
 
