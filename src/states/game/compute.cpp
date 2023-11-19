@@ -12,9 +12,9 @@ void StateGame::Compute(StackMachine& _stack_machine) {
   sf::Time deltaTime = m_frame_clock.restart();
 
   for (auto& entityPtr : m_entities) {
-    Entity& entity = *entityPtr; 
+    Entity& entity = *entityPtr;
 
-    if (entity.getType() == Entity::Type::Player) { 
+    if (entity.getType() == Entity::Type::Player) {
 
       sf::Vector2f acceleration(0.f, 0.f);
 
@@ -32,11 +32,16 @@ void StateGame::Compute(StackMachine& _stack_machine) {
       }
 
       entity.setAcceleration(acceleration);
-      entity.update(deltaTime);
+      // entity.update(deltaTime);
     }
 
     if (entity.getType() == Entity::Type::Enemy) {
-
     }
+  }
+
+  m_physics.simulateOneTick();
+
+  for (auto& entity : m_entities) {
+    m_physics.updateEntity(*entity);
   }
 }

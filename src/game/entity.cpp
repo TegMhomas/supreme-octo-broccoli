@@ -1,8 +1,17 @@
 #include "game/entity.hpp"
+#include "entity.hpp"
 
-Entity::Entity(Type type): m_type(type), stats(), m_velocity(sf::Vector2f(0.f, 0.f)), m_acceleration(sf::Vector2f(0.f, 0.f)) {}
+Entity::Entity(Type type)
+  : m_type(type)
+  , stats()
+  , m_velocity(sf::Vector2f(0.f, 0.f))
+  , m_acceleration(sf::Vector2f(0.f, 0.f)) {}
 
-Entity::Entity(Type type, const EntityStats& statsValues): m_type(type), stats(statsValues),  m_velocity(sf::Vector2f(0.f, 0.f)), m_acceleration(sf::Vector2f(0.f, 0.f)) {}
+Entity::Entity(Type type, const EntityStats& statsValues)
+  : m_type(type)
+  , stats(statsValues)
+  , m_velocity(sf::Vector2f(0.f, 0.f))
+  , m_acceleration(sf::Vector2f(0.f, 0.f)) {}
 
 Entity::~Entity() {}
 
@@ -10,7 +19,7 @@ void Entity::update(sf::Time deltaTime) {
   m_velocity += m_acceleration * deltaTime.asSeconds();
 
   float maxAdjustedSpeed = baseSpeed * stats.getStat(EntityStats::MovementSpeed);
-  float currentSpeed = std::hypot(m_velocity.x, m_velocity.y); 
+  float currentSpeed = std::hypot(m_velocity.x, m_velocity.y);
   if (currentSpeed > maxAdjustedSpeed) {
     m_velocity = maxAdjustedSpeed / currentSpeed * m_velocity;
   }
@@ -32,7 +41,6 @@ void Entity::update(sf::Time deltaTime) {
 
   m_acceleration = sf::Vector2f(0.f, 0.f);
 }
-
 
 void Entity::takeDamage(float amount) {
   int damageTaken = std::max(amount - stats.getStat(EntityStats::Defense), 0.0f);
@@ -94,3 +102,5 @@ void Entity::setAcceleration(const sf::Vector2f& acc) {
 sf::Vector2f Entity::getAcceleration() const {
   return m_acceleration;
 }
+
+void Entity::registerInPhysicsEngine() {}
