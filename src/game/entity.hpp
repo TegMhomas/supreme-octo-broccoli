@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "entity_stats.hpp"
+#include <box2d/box2d.h>
 
 class Entity {
 public:
@@ -21,13 +22,17 @@ public:
 
   EntityStats stats;
 
+  /// Box2d physics body.
+  /// Physics engine manages this pointer, and should not be allocated or freed manually.
+  /// If null, there is no physics body associated with this entity.
+  b2Body* m_physics_body = nullptr;
+
   static constexpr float baseSpeed = 5.0f;
   static constexpr float accelerationRate = 12.5f;
   static constexpr float decelerationRate = 12.5f;
 
-
   Entity(Type type);
-  Entity(Type type, const EntityStats &stats);
+  Entity(Type type, const EntityStats& stats);
 
   virtual ~Entity();
 
@@ -53,5 +58,6 @@ public:
   void setAcceleration(const sf::Vector2f& acc);
 
   sf::Vector2f getAcceleration() const;
-};
 
+  void registerInPhysicsEngine();
+};
