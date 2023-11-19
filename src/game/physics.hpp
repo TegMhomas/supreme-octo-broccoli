@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "game/entity.hpp"
+#include <box2d/box2d.h>
 
 /// @brief Represents the whole physics world, and holds box2d things.
 class Physics {
@@ -16,4 +17,5 @@ public:
   Physics& operator=(Physics&& other) noexcept = delete;
 
 private:
+  b2World m_b2_world;
 };
